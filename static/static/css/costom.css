@@ -1,0 +1,19 @@
+.jumbotron {
+  position: relative;
+  padding: 40px 0;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+  background: #00BB61; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  #07FF45 0%, #005547 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#00BB61), color-stop(100%,#005547)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(45deg,  #00BB61 0%,#005547 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(45deg,  #00BB61 0%,#005547 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(45deg,  #00BB61 0%,#005547 100%); /* IE10+ */
+  background: linear-gradient(45deg,  #00BB61 0%,#005547 100%); /* W3C */
+}
+
+body > .navbar .brand{
+    float: left;
+    color: orange;
+}

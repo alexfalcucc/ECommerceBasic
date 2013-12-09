@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{{ message }}
+
+<table class='table'>
+    <thead><th>Item</th><th>Quantity</th><th>Unit Price</th> <th>Totoal</th></thead>
+{% for item in cart.cartitem_set.all   %}
+ 
+<tr>
+   <td>{{ item.product }}</td>
+   <td>{{ item.quantity }}</td>
+   <td>{{ item.product.price }}</td>
+   <td>{{ item.total }}</td>
+</tr>
+{% endfor %}
+
+<tfoot>
+    <th></th>
+    <th></th>
+    <th>Subtotal:</th>
+    <th>{{ cart.total }}</th>
+</tfoot>
+
+</table>
+{% endblock %}
